@@ -32,7 +32,7 @@ git remote add upstream https://github.com/song960530/algostudy-java
 <br>  
 <br>  
 
-### 👇아래 1~4번은 작업할때마다 반복 실행
+### 👇아래 1~7번은 작업할때마다 반복 실행
 
 1. 로컬Repo에 포크한 Repo의 업데이트 내역 불러오기
 ```
@@ -59,3 +59,5 @@ git push origin feature/week1송문준
 6. 포크한Repo로 PR 날리기
 
 ![PR2](https://user-images.githubusercontent.com/52727315/169644623-eec4c01c-3c4d-45a1-badb-8fbcc6277045.png)
+
+7. 이후 PR날렸다고 알려주시면 됩니다👏
