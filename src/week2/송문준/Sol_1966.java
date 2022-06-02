@@ -10,44 +10,61 @@ import java.util.Queue;
 public class Sol_1966 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        Queue<Integer> queue1 = new LinkedList<>(); // 우선순위
-        Queue<Boolean> queue2 = new LinkedList<>(); // true/false
-        int input = Integer.parseInt(br.readLine());
+        StringBuilder sb = new StringBuilder();
+        Queue<Calc> calcQueue = new LinkedList<>();
+        int cmdLine = Integer.parseInt(br.readLine());
 
-        for (int i = 0; i < input; i++) {
-            int[] i1 = Arrays.stream(br.readLine().split(" ")).mapToInt(s -> Integer.parseInt(s)).toArray(); // [0]:개수, [1]:위치
-            int[] i2 = Arrays.stream(br.readLine().split(" ")).mapToInt(s -> Integer.parseInt(s)).toArray(); // 우선순위
-            int[] i3 = Arrays.stream(i2).sorted().toArray();
-            queue1.clear();
-            queue2.clear();
+        for (int i = 0; i < cmdLine; i++) {
+            int cnt = 1;
+            int[] countAndIndex = Arrays.stream(br.readLine().split(" ")).mapToInt(s -> Integer.parseInt(s)).toArray(); // [0]:개수, [1]:위치
+            int[] priorities = Arrays.stream(br.readLine().split(" ")).mapToInt(s -> Integer.parseInt(s)).toArray(); // 우선순위
+            int[] sortPriorities = Arrays.stream(priorities).sorted().toArray();
+            calcQueue.clear();
 
-            for (int i4 = 0; i4 < i2.length; i4++) {
-                queue1.offer(i2[i4]); // 우선순위 입력받은거 저장
-
-                if (i4 == i1[1])
-                    queue2.offer(true); // 출력을 원하는 위치에만 true
-                else
-                    queue2.offer(false);
+            if (countAndIndex[0] == 1) {
+                sb.append(cnt + "\n");
+                continue;
             }
 
-            int cnt = 1;
-            for (int i5 = i3.length - 1; i5 > -1; ) {
-                if (queue1.peek() == i3[i5]) {
-                    if (queue2.peek()) {
+            for (int j = 0; j < priorities.length; j++) {
+                calcQueue.offer(new Calc(countAndIndex[1] == j ? true : false, priorities[j]));
+            }
+
+            for (int k = sortPriorities.length - 1; k > -1; ) {
+                if (sortPriorities[k] == calcQueue.peek().getPriority()) {
+                    if (calcQueue.peek().isCheck()) {
                         break;
                     } else {
-                        queue1.poll();
-                        queue2.poll();
+                        calcQueue.poll();
                         cnt++;
                     }
-                    i5--;
+                    k--;
                 } else {
-                    queue1.offer(queue1.poll());
-                    queue2.offer(queue2.poll());
+                    calcQueue.offer(calcQueue.poll());
                 }
             }
 
-            System.out.println(cnt);
+            sb.append(cnt + "\n");
         }
+
+        System.out.println(sb);
+    }
+}
+
+class Calc {
+    private boolean check;
+    private int priority;
+
+    public Calc(boolean check, int priority) {
+        this.check = check;
+        this.priority = priority;
+    }
+
+    public boolean isCheck() {
+        return check;
+    }
+
+    public int getPriority() {
+        return priority;
     }
 }

@@ -12,12 +12,14 @@ public class Sol_5430 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuffer sb = new StringBuffer();
-        int cnt = Integer.parseInt(br.readLine());
-        int size;
-        String cmds, input;
+        boolean reverse;
         Deque<Integer> queue;
+        String cmds, input;
+        int size;
+        int cnt = Integer.parseInt(br.readLine());
 
         for (int i = 0; i < cnt; i++) {
+            reverse = false;
             cmds = br.readLine();
             size = Integer.parseInt(br.readLine());
             input = br.readLine();
@@ -37,8 +39,6 @@ public class Sol_5430 {
                 sb.append("error\n");
                 continue;
             }
-
-            boolean reverse = false;
 
             for (int j = 0; j < cmds.length(); j++) {
                 char cmd = cmds.charAt(j);
