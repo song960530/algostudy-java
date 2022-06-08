@@ -18,51 +18,48 @@ public class Sol_17478 {
     };
 
     static final String firstMessage = "어느 한 컴퓨터공학과 학생이 유명한 교수님을 찾아가 물었다.\n";
-    static final String finalMessage = "라고 답하였지.\n";
-    static final String prefix = "----";
+    static final String finalMessage = "라고 답변하였지.\n";
+    static final String prefix = "____";
 
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder sb = new StringBuilder();
-        int cnt = Integer.parseInt(br.readLine());
-        int tmpCnt = cnt;
+        int rootCnt = Integer.parseInt(br.readLine());
+        int childCnt = rootCnt;
 
-        makeMessage(cnt, tmpCnt, sb);
-        System.out.println(sb);
+        System.out.println(makeMessage(rootCnt, childCnt));
     }
 
-    private static String makeMessage(int cnt, int tmpCnt, StringBuilder sb) {
+    private static String makeMessage(int rootCnt, int childCnt) {
+        StringBuilder sb = new StringBuilder();
 
-        if (cnt == tmpCnt)
+        if (rootCnt == childCnt)
             sb.append(firstMessage);
 
-        if (tmpCnt != 0) {
+        if (childCnt != 0) {
             for (String message : fakeMesssages) {
-                for (int i = cnt; i > tmpCnt; i--) {
+                for (int i = rootCnt; i > childCnt; i--) {
                     sb.append(prefix);
                 }
                 sb.append(message);
             }
 
-            makeMessage(cnt, --tmpCnt, sb);
-
-            for (int i = cnt; i > tmpCnt; i--) {
-                sb.append(prefix);
-            }
-            sb.append(finalMessage);
+            sb.append(makeMessage(rootCnt, childCnt - 1));
         } else {
             for (String message : realMessages) {
-                for (int i = cnt; i > tmpCnt; i--) {
+                for (int i = rootCnt; i > childCnt; i--) {
                     sb.append(prefix);
                 }
                 sb.append(message);
             }
         }
 
-        if (cnt == tmpCnt)
-            sb.append(finalMessage);
+        for (int i = rootCnt; i > childCnt; i--) {
+            sb.append(prefix);
+        }
 
-        return null;
+        sb.append(rootCnt == childCnt ? finalMessage.substring(0, finalMessage.lastIndexOf("\n")) : finalMessage);
+
+        return sb.toString();
     }
 }
