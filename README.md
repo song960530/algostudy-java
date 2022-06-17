@@ -18,7 +18,7 @@
 |✨|[1966_프린터 큐](https://www.acmicpc.net/problem/1966)|[2164_카드2](https://www.acmicpc.net/problem/2164)|[5430_AC](https://www.acmicpc.net/problem/5430)|[10866_덱](https://www.acmicpc.net/problem/10866)|[18258_큐 2](https://www.acmicpc.net/problem/18258)|
 |------|:---:|:---:|:---:|:---:|:---:|
 |**준우님**|✔|✔|✔|✔|✔|
-|**진향님**|✔|✔|✔|✔|✔|
+|**진향님**|✔|✔|||✔|
 |**근형님**|✔|✔|✔|✔|✔|
 |**문준님**|✔|✔|✔|✔|✔|
 <br>  
