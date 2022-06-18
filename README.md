@@ -27,15 +27,25 @@
 **🛠3주차_재귀**
 |✨|[2447_별 찍기 - 10](https://www.acmicpc.net/problem/2447)|[10870_피보나치 수 5](https://www.acmicpc.net/problem/10870)|[10872_팩토리얼](https://www.acmicpc.net/problem/10872)|[11729_하노이 탑 이동 순서](https://www.acmicpc.net/problem/11729)|[17478_재귀함수가 뭔가요?](https://www.acmicpc.net/problem/17478)|
 |------|:---:|:---:|:---:|:---:|:---:|
-|**준우님**||||||
-|**진향님**||||||
-|**근형님**||||||
-|**문준님**||||||
+|**준우님**|✔|✔|✔|✔|✔|
+|**진향님**|✔||✔||✔|
+|**근형님**|✔|✔|✔|✔|✔|
+|**문준님**||✔|✔|✔|✔|
 <br>  
 <br>  
 
 **🛠4주차_DP(Dynamic Programming_동적 계획법)**
 |✨|[1932_정수 삼각형](https://www.acmicpc.net/problem/1932)|[9251_	LCS](https://www.acmicpc.net/problem/9251)|[11053_가장 긴 증가하는<br> 부분 수열](https://www.acmicpc.net/problem/11053)|[12865_평범한 배낭](https://www.acmicpc.net/problem/12865)|[24416_알고리즘 수업 - 피보나치 수 1](https://www.acmicpc.net/problem/24416)|
+|------|:---:|:---:|:---:|:---:|:---:|
+|**준우님**|✔|✔|✔|✔|✔|
+|**진향님**|✔|✔||✔||
+|**근형님**|✔|✔|✔|✔|✔|
+|**문준님**|✔|✔||✔|✔|
+<br>  
+<br>  
+
+**🛠5주차_DFS(깊이 우선 탐색)**
+|✨|[559_Maximum Depth of N-ary Tree](https://leetcode.com/problemset/all/?search=559&page=1)|[637_Average of Levels in Binary Tree](https://leetcode.com/problemset/all/?search=637&page=1)|[695. Max Area of Island](https://leetcode.com/problemset/all/?search=695+&page=1)|[733_Flood Fill](https://leetcode.com/problemset/all/?search=733&page=1)|[1261_Find Elements in a Contaminated Binary Tree](https://leetcode.com/problemset/all/?search=1261&page=1)|
 |------|:---:|:---:|:---:|:---:|:---:|
 |**준우님**||||||
 |**진향님**||||||
