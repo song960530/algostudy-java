@@ -45,12 +45,23 @@
 <br>  
 
 **🛠5주차_DFS(깊이 우선 탐색)**
-|✨|[559_Maximum Depth of N-ary Tree](https://leetcode.com/problemset/all/?search=559&page=1)|[637_Average of Levels in Binary Tree](https://leetcode.com/problemset/all/?search=637&page=1)|[695. Max Area of Island](https://leetcode.com/problemset/all/?search=695+&page=1)|[733_Flood Fill](https://leetcode.com/problemset/all/?search=733&page=1)|[1261_Find Elements in a Contaminated Binary Tree](https://leetcode.com/problemset/all/?search=1261&page=1)|
+|✨|[98번](https://leetcode.com/problems/validate-binary-search-tree/)|[101번](https://leetcode.com/problems/symmetric-tree/)|[104번](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|[112번](https://leetcode.com/problems/path-sum/)|[113번](https://leetcode.com/problems/path-sum-ii/)|
+|------|:---:|:---:|:---:|:---:|:---:|
+|**준우님**|✔|✔|✔|✔|✔|
+|**진향님**|✔|✔|✔|||
+|**근형님**|✔|✔|✔|✔|✔|
+|**문준님**||||||
+<br>  
+<br>  
+
+**🛠6주차_BFS(넓이 우선 탐색)**
+|✨|[116번](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[226번](https://leetcode.com/problems/invert-binary-tree/)|[617번](https://leetcode.com/problems/merge-two-binary-trees/)|[695번](https://leetcode.com/problems/max-area-of-island/)|[733번](https://leetcode.com/problems/flood-fill/)|
 |------|:---:|:---:|:---:|:---:|:---:|
 |**준우님**||||||
 |**진향님**||||||
 |**근형님**||||||
 |**문준님**||||||
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------
