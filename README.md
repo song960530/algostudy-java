@@ -57,6 +57,16 @@
 **🛠6주차_BFS(넓이 우선 탐색)**
 |✨|[116번](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[226번](https://leetcode.com/problems/invert-binary-tree/)|[617번](https://leetcode.com/problems/merge-two-binary-trees/)|[695번](https://leetcode.com/problems/max-area-of-island/)|[733번](https://leetcode.com/problems/flood-fill/)|
 |------|:---:|:---:|:---:|:---:|:---:|
+|**준우님**|✔|✔|✔|✔|✔|
+|**진향님**||||||
+|**근형님**|✔|✔|✔|✔|✔|
+|**문준님**|✔|✔||✔|✔|
+<br>  
+<br>  
+
+**🛠7주차_DFS,BFS(5주차,6주차 복습)**
+|✨|[백준_1260번](https://www.acmicpc.net/problem/1260)|[백준_7562번](https://www.acmicpc.net/problem/7562)|[백준_7569번](https://www.acmicpc.net/problem/7569)|[프로그래머스_43164번](https://programmers.co.kr/learn/courses/30/lessons/43164)|[프로그래머스_43165번](https://programmers.co.kr/learn/courses/30/lessons/43165)|
+|------|:---:|:---:|:---:|:---:|:---:|
 |**준우님**||||||
 |**진향님**||||||
 |**근형님**||||||
