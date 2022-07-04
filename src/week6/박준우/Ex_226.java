@@ -1,4 +1,6 @@
-package leetcode;
+package week6.박준우;
+
+
 /*
     226. Invert Binary Tree
  */
@@ -8,7 +10,7 @@ public class Ex_226 {
         return root;
     }
 
-    public void recursive(TreeNode node) {
+    static void recursive(TreeNode node) {
         if(node != null) {
             //if(node.left != null && node.right != null) {
             TreeNode temp = node.right;

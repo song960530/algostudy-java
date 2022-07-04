@@ -1,4 +1,6 @@
-package leetcode;
+package week5.박준우;
+
+import week5.박준우.TreeNode;
 
 /**
  * Definition for a binary tree node.
