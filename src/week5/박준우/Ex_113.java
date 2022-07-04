@@ -1,4 +1,6 @@
-package leetcode;
+package week5.박준우;
+import week5.박준우.TreeNode;
+
 import java.util.*;
 public class Ex_113 {
 
@@ -19,7 +21,7 @@ public class Ex_113 {
         return lists;
     }
 
-    public static void recursive(TreeNode node, List<Integer> list) {
+    static void recursive(TreeNode node, List<Integer> list) {
         if(node.left == null && node.right == null) {
             list.add(node.val);
             if(finalSum == list.stream().mapToInt(a->a).sum()) {

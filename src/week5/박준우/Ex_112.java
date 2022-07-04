@@ -1,6 +1,5 @@
-package leetcode;
+package week5.박준우;
 
-import Programmers.Ex_42579;
 
 import java.util.ArrayList;
 import java.util.List;
