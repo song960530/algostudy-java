@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Sol_7562 {
+public class BaekJoon_7562 {
     static Queue<Position> queue = new LinkedList<>();
     static String command[] = new String[3];
     static boolean chess[][];

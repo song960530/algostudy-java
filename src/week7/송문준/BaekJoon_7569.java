@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 
-public class Sol_7569 {
+public class BaekJoon_7569 {
     static int tomato[][][];
     static Queue<Position> queue = new LinkedList<>();
     static int zeroCnt = 0;
