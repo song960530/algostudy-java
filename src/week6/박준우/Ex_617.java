@@ -1,4 +1,4 @@
-package week6.박준우;
+package leetcode;
 
 /*
     leetcode 617 Merge Two Binary Trees
