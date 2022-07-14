@@ -1,5 +1,8 @@
 package week7.박준우;
-
+/*
+    백준 DFS/BFS
+    1260 DFS와 BFS
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -35,6 +38,11 @@ public class Ex_1260 {
             arr[x][y] = arr[y][x] = 1;
         }
         dfs(v);
+        sb.append("\n");
+        visited = new boolean[n+1];
+
+        bfs(v);
+        System.out.println(sb);
 
         System.out.println(v);
     }
@@ -42,7 +50,7 @@ public class Ex_1260 {
     public static void dfs(int v) {
         visited[v] = true;
         sb.append(v + " ");
-        System.out.println(v);
+        //System.out.println(v);
 
         for(int i=1; i<=n; i++) {
             if (arr[v][i] == 1 && !visited[i]) {
