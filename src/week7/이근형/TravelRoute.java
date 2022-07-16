@@ -7,6 +7,13 @@ public class TravelRoute {
     static boolean[] visited;
     static String[][] tickets;
 
+    public static void main(String[] args) {
+        TravelRoute foo = new TravelRoute();
+        String[][] tickets = {{"ICN", "JFK"}, {"HND", "IAD"}, {"JFK", "HND"}};
+        String[] result = foo.solution(tickets);
+        System.out.println(Arrays.toString(result));
+    }
+
     public String[] solution(String[][] tickets) {
         result = new ArrayList<>();
         this.tickets = tickets;
@@ -54,10 +61,10 @@ public class TravelRoute {
             return;
         }
 
-        String arrive = candidate.peek();
+        String depart = candidate.peek();
         for(int i = 0; i < tickets.length; i++) {
             String[] route = tickets[i];
-            if(!visited[i] && arrive.equals(route[0])) {
+            if(!visited[i] && depart.equals(route[0])) {
                 candidate.push(route[1]);
                 visited[i] = true;
                 dfs(candidate, len + 1);
