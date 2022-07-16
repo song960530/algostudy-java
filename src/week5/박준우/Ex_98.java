@@ -1,7 +1,7 @@
 package week5.박준우;
 
 public class Ex_98 {
-
+    /*
     public boolean isValidBST(TreeNode root) {
         return CheckValidity(root,Long.MIN_VALUE,Long.MAX_VALUE);
     }
@@ -12,6 +12,7 @@ public class Ex_98 {
 
         return CheckValidity(root.left,leftMax,root.val) && CheckValidity(root.right,root.val,rightMin);
     }
+    */
 }
 
 /*

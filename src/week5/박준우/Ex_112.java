@@ -21,6 +21,7 @@ import java.util.List;
  */
 class Ex_112 {
 
+    /*
     public static boolean flag;
 
     public boolean hasPathSum(TreeNode root, int targetSum) {
@@ -57,4 +58,6 @@ class Ex_112 {
             }
         }
     }
+
+     */
 }
