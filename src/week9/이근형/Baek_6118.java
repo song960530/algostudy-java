@@ -57,7 +57,7 @@ public class Baek_6118 {
             int min = Integer.MAX_VALUE;
             int minIdx = -1;
 
-            // 방문하지 않은 노드 중 최소 거 찾기
+            // 방문하지 않은 노드 중 최소 거리 찾기
             for(int j = 1; j <= hutgan; j++) {
                 if(!visited[j] && dist[j] != Integer.MAX_VALUE) {
                     if(dist[j] < min) {
