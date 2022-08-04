@@ -15,6 +15,8 @@ public class BaekJoon_10159 {
     static int[] result;
 
     public static void main(String[] args) throws IOException {
+        Queue<Node> queue = new LinkedList<>();
+
         // 첫번째줄 read
         int[] cmd = readLine();
 
@@ -30,16 +32,15 @@ public class BaekJoon_10159 {
         // 링크 연결
         linkEachNode(cmd[0], nodes);
 
-        Queue<Node> queue = new LinkedList<>();
         for (Node node : nodes) {
-            queue.offer(node);
-
             // 정방향 노드 탐색
+            queue.offer(node);
             bfsLinked(queue);
 
             tmpVisitClear(nodes);
 
             // 역방향(반대방향) 노드 탐색
+            queue.offer(node);
             bfsTmpLinked(queue);
 
             recordResult(nodes, node);
@@ -47,8 +48,12 @@ public class BaekJoon_10159 {
             allVisitClear(nodes);
         }
 
-        for (int i : result) {
-            System.out.println(i);
+        printResult();
+    }
+
+    private static void printResult() {
+        for (int i = 1; i < result.length; i++) {
+            System.out.println(result[i]);
         }
     }
 
