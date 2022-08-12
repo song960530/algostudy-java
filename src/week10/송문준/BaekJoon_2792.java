@@ -13,16 +13,16 @@ public class BaekJoon_2792 {
         int[] jewel;
         int[] cmd = readLine();
 
-        int N = cmd[0]; // 학생수 -> 5
-        int M = cmd[1]; // 보석 종류 -> 2
+        int studentCount = cmd[0]; // 학생수 -> 5
+        int jewelCount = cmd[1]; // 보석 종류 -> 2
 
-        jewel = new int[M]; // 보석 개수 저장 배열
+        jewel = new int[jewelCount]; // 보석 개수 저장 배열
 
         // 보석 개수 저장
-        right = recordAndGetMaxJewel(right, jewel, M);
+        right = recordAndGetMaxJewel(right, jewel, jewelCount);
 
         // 이분탐색
-        answer = binarySearch(left, right, answer, jewel, N);
+        answer = binarySearch(left, right, answer, jewel, studentCount);
 
         System.out.println(answer);
     }
